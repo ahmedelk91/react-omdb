@@ -10,7 +10,7 @@ class Search extends Component {
           onChange={(evt) => handleSearchInput(evt)}
           value={query}
           type="text"
-          placeholder="Enter a movie title..."
+          placeholder="Enter a movie title..." />
           <button type="submit"> Search </button>
         </form>
       </div>
