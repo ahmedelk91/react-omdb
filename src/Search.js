@@ -1,15 +1,16 @@
 import React, {Component} from 'react'
 
 class Search extends Component {
-  submitQuery(evt){
-    evt.preventDefault();
-    console.log("submitted");
-  }
   render(){
+    let {handleSearchInput, handleSubmitQuery, query} = this.props
     return(
       <div className="searchBox">
-        <form onSubmit={(evt) => this.submitQuery(evt)}>
-          <input type="text" placeholder="Enter a movie title..." />
+        <form onSubmit={(evt) => handleSubmitQuery(evt)}>
+          <input
+          onChange={(evt) => handleSearchInput(evt)}
+          value={query}
+          type="text"
+          placeholder="Enter a movie title..."
           <button type="submit"> Search </button>
         </form>
       </div>
