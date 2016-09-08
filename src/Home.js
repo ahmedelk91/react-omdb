@@ -1,12 +1,12 @@
 // Developer TODO: Define App component defintion here
 import React, {Component} from 'react'
 
-class Hello extends Component {
+class Home extends Component {
   render() {
     return(
-      <h1> Hello World! </h1>
+      <div> <h1> Kool Flix </h1> </div>
     )
   }
 }
 
-export default Hello
+export default Home
